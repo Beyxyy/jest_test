@@ -1,12 +1,12 @@
-function to_be_tested(){
+function has_to_return_false(){
     return false;
 }
 
-function to_be_tested_2(){
-    return 'salut beau gosse';
+function has_to_return_true(){
+    return true;
 }
 
 module.exports = {
-    to_be_tested,
-    to_be_tested_2
+    has_to_return_true,
+    has_to_return_false
 }

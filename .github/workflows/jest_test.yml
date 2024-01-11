@@ -1,0 +1,19 @@
+name: test
+run-name: Jest Testing...
+on:
+    push:
+jobs:
+    test:
+        runs-on: debian-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                node-version: 18.x
+            - run: npm install
+            - run: npm test
+
+
+
+

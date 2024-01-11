@@ -1,7 +1,6 @@
 name: test
 run-name: Jest Testing...
-on:
-    push:
+on: [push]
 jobs:
     test:
         runs-on: debian-latest

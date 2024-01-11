@@ -3,7 +3,7 @@ run-name: Jest Testing...
 on: [push]
 jobs:
     test:
-        runs-on: debian-latest
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
             - name: Use Node.js 12.x

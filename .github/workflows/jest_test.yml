@@ -1,18 +1,24 @@
 name: test
-run-name: Jest Testing...
-on: [push]
+
+on:
+  push:
+    branches:
+      - main  # ou ajuste selon ta branche par défaut
+
 jobs:
-    test:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: Use Node.js 12.x
-              uses: actions/setup-node@v1
-              with:
-                node-version: 18.x
-            - run: npm install
-            - run: npm test
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 12.x
 
+      - name: Install Dependencies
+        run: npm install
 
-
+      - name: Run Jest Tests
+        run: npm test

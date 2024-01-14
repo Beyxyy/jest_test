@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Le résultat de l'API doit correspondre au snapshot 1`] = `
+{
+  "age": "20",
+  "email": "randomuser@gmail.com",
+  "firstname": "Random",
+  "friends": [
+    {
+      "id": [
+        "2",
+        "5",
+        "7",
+        "9",
+        "10",
+      ],
+    },
+  ],
+  "hobbys": [
+    {
+      "sport": [
+        "football",
+        "gym",
+      ],
+    },
+    {
+      "music": [
+        "rock",
+        "pop",
+        "drill",
+      ],
+    },
+    {
+      "food": [
+        "pizza",
+        "chicken",
+      ],
+    },
+  ],
+  "id": "1",
+  "lastname": "User",
+}
+`;

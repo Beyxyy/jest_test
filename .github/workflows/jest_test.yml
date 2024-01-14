@@ -1,9 +1,8 @@
 name: test
-
 on:
   push:
     branches:
-      - main  # ou ajuste selon ta branche par défaut
+      - main  
 
 jobs:
   test:

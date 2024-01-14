@@ -5,3 +5,6 @@ test("Le résultat de l'API doit correspondre au snapshot", () => {
     console.log(result);
     expect(result).toMatchSnapshot();
 });
+
+
+
